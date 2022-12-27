@@ -1,0 +1,9 @@
+Package: rlibmc
+Version: 0.0.0
+Title: Mem cached client library
+Depends: 
+    base (>= 3.5.2),
+    R (>= 3.10)
+Description: R client to use the mem cached library written in C..
+License: MPL-2.0 | file LICENSE
+Encoding: UTF-8
