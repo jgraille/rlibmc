@@ -1,6 +1,10 @@
 # rlibmc
 
-
+# libmemcached
+**On mac OS**:
+```
+brew install libmemcached
+```
 
 # Annexes
 http://colinfay.me/r-internals/r-internal-structures.html
