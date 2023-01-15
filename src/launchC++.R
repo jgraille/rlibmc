@@ -7,4 +7,6 @@ allC(c(TRUE,TRUE))
 allC(c(TRUE, FALSE))
 allC(c(FALSE,FALSE))
 
+cumprodC(c(1,2,3,4))
+
 quit(save = 'no')
