@@ -1,20 +1,27 @@
-def decorated_my_lambda(func):
-    def wrapper():
-        local = False
-        if local is False:
-            print("Local is false")
-            func()
-        else:
-            print("passing")
-            pass
-    return wrapper
+def load(local):
+    if local:
+        params = {"key":"this is local"}
+    else:
+        params = {"key":"this is not local"}
+        
+    def decorated_my_lambda(func):
+        def wrapper(*args,**kwargs):
+            if local is False:
+                print(params)
+                func(*args,**kwargs)
+            else:
+                print("passing")
+                pass
+        return wrapper
+    return decorated_my_lambda
 
-@decorated_my_lambda
-def my_lambda():
-    print(f"This is the silvester")
+@load(local = True)
+def my_lambda(event,context):
+    print(f"This is the {event}")
+    print(f"The context is {context}")
 
 
-my_lambda()
+my_lambda(event = "Silverster", context = "cold")
 
 
 
