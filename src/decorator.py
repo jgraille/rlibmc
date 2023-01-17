@@ -1,24 +1,20 @@
-def load(local = False):
-    
-    def decorated_my_lambda(func):
-        if local == False:
+def decorated_my_lambda(func):
+    def wrapper():
+        local = False
+        if local is False:
+            print("Local is false")
             func()
         else:
-            print("will pass")
+            print("passing")
             pass
-    return decorated_my_lambda
+    return wrapper
 
-
-@load(local = False)
+@decorated_my_lambda
 def my_lambda():
     print(f"This is the silvester")
 
 
-def main():
-    my_lambda()
-
-if __name__ == '__main__':
-    main()
+my_lambda()
 
 
 
