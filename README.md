@@ -8,7 +8,7 @@ brew install libmemcached
 
 # features status
 - Step one [Done] -> practising with this doc http://adv-r.had.co.nz/C-interface.html
-- Step two [On going] -> practising with Rcpp
+- Step two [On going] -> practising with Rcpp [Done]
 - Step third -> Understanding of the _pylibmcmodule.c/_pylibmcmodule.h
 
 # Annexes
