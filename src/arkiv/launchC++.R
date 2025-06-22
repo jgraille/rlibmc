@@ -1,7 +1,7 @@
 rm(list = ls())
 library(Rcpp)
 library(here)
-sourceCpp(here("src/practice.cpp"))
+sourceCpp(here("src/arkiv/practice.cpp"))
 
 allC(c(TRUE,TRUE))
 allC(c(TRUE, FALSE))

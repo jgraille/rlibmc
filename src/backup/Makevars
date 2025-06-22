@@ -1,0 +1,2 @@
+PKG_LIBS = -lmemcached
+PKG_CPPFLAGS = -I/usr/local/include 
